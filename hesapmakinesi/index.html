@@ -13,9 +13,9 @@
 
 
     <div class="hesap">
-        <div class="row"><input class="hesap-input" type="text" name="" id="hesap-input"><input type="button" value="C"
+        <div class="row"><input class="hesap-input" type="text" name="" id="hesap-input" readonly><input type="button" value="C"
                 onclick="temizle()"></div>
-        <div class="row"> <input type="button" name="" id="" value="1" onclick="islem(this)">
+        <div class="row"> <input type="button" name="" id=""  value="1" onclick="islem(this)" >
             <input type="button" name="" id="" value="2" onclick="islem(this)">
 
             <input type="button" name="" id="" value="3" onclick="islem(this)">
@@ -70,6 +70,7 @@
 
     <script>
         const input = document.getElementById('hesap-input');
+        // input.readOnly = true;
         let value = "";
         function islem(e) {
             value += e.value;
