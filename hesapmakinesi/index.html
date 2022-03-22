@@ -13,9 +13,9 @@
 
 
     <div class="hesap">
-        <div class="row"><input class="hesap-input" type="text" name="" id="hesap-input" readonly><input type="button" value="C"
-                onclick="temizle()"></div>
-        <div class="row"> <input type="button" name="" id=""  value="1" onclick="islem(this)" >
+        <div class="row"><input class="hesap-input" type="text" name="" id="hesap-input" readonly><input type="button"
+                value="C" onclick="temizle()"></div>
+        <div class="row"> <input type="button" name="" id="" value="1" onclick="islem(this)">
             <input type="button" name="" id="" value="2" onclick="islem(this)">
 
             <input type="button" name="" id="" value="3" onclick="islem(this)">
@@ -73,8 +73,26 @@
         // input.readOnly = true;
         let value = "";
         function islem(e) {
-            value += e.value;
-            input.value = value;
+            const CharValue = e.value.charCodeAt(0)
+            if (CharValue >= 48 && CharValue <= 57) {
+                value += e.value;
+                input.value = value;
+            }
+            else if (CharValue >= 42 && CharValue <= 47) {
+                const endSembol = value.charCodeAt(value.length - 1);
+
+                if (endSembol >= 42 && endSembol <= 47) {
+                    const valueLenght = value.length - 1;
+                    value = value.slice(0, valueLenght)
+                }
+
+                value += e.value;
+                input.value = value;
+
+            }
+
+            // value += e.value;
+
         }
 
         function sonuc() {
