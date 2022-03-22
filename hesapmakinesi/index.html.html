@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div class="hesap">
+        <div class="row"><input class="hesap-input" type="text" name="" id="hesap-input"><input type="button" value="C"
+                onclick="temizle()"></div>
+        <div class="row"> <input type="button" name="" id="" value="1" onclick="islem(this)">
+            <input type="button" name="" id="" value="2" onclick="islem(this)">
+
+            <input type="button" name="" id="" value="3" onclick="islem(this)">
+            <input type="button" name="" id="" value="/" onclick="islem(this)">
+        </div>
+        <div class="row">
+            <input type="button" name="" id="" value="4" onclick="islem(this)">
+            <input type="button" name="" id="" value="5" onclick="islem(this)">
+            <input type="button" name="" id="" value="6" onclick="islem(this)">
+            <input type="button" name="" id="" value="-" onclick="islem(this)">
+        </div>
+        <div class="row">
+            <input type="button" name="" id="" value="7" onclick="islem(this)">
+            <input type="button" name="" id="" value="8" onclick="islem(this)">
+            <input type="button" name="" id="" value="9" onclick="islem(this)">
+            <input type="button" name="" id="" value="+" onclick="islem(this)">
+        </div>
+        <div class="row">
+            <input type="button" name="" id="" value="." onclick="islem(this)">
+            <input type="button" name="" id="" value="0" onclick="islem(this)">
+            <input type="button" name="" id="" value="=" onclick="sonuc()">
+            <input type="button" name="" id="" value="*" onclick="islem(this)">
+        </div>
+
+
+    </div>
+
+
+    <style>
+        .hesap-input {
+            width: 115px;
+            margin-right: 5px;
+
+        }
+
+        input {
+            margin: 5px;
+            width: 30px;
+        }
+
+        .hesap {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+
+
+    <script>
+        const input = document.getElementById('hesap-input');
+        let value = "";
+        function islem(e) {           
+            value += e.value;
+            input.value = value;
+        }
+
+        function sonuc() {
+            if(value){
+                input.value =eval(value)
+                value="";
+            }          
+
+        }
+        function temizle() {
+            value = ""
+            input.value = "";
+        }
+
+    </script>
+</body>
+
+</html>
