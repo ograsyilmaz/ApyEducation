@@ -78,7 +78,9 @@
 
         function sonuc() {
             if (value) {
-                input.value = eval(value)
+                const islem = eval(value)
+                input.value = islem;
+                value = islem;
 
             }
 
