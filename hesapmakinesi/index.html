@@ -71,16 +71,16 @@
     <script>
         const input = document.getElementById('hesap-input');
         let value = "";
-        function islem(e) {           
+        function islem(e) {
             value += e.value;
             input.value = value;
         }
 
         function sonuc() {
-            if(value){
-                input.value =eval(value)
-                value="";
-            }          
+            if (value) {
+                input.value = eval(value)
+
+            }
 
         }
         function temizle() {
