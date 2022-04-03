@@ -1,0 +1,49 @@
+.sudokuGame{
+    text-align: center;
+}
+
+.sudokuGame p {
+    font-size: 50px;
+    color: black;
+}
+
+
+.sudoku{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.mainSudoku{
+    border: 3px double black;
+ background-color: yellow;
+
+ display: flex;
+ flex-direction: column;
+ box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 30%);
+}
+
+.mainSudokuRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainSudokuItem{
+    display: flex;
+ flex-direction: column;
+ border: 1px solid black;
+    margin: 5px;
+    background-color: white;
+}
+
+.mainSodokuItemRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainSudokuNumber{
+    border: 1px solid black;
+    padding: 20px;
+}
