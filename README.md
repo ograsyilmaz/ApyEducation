@@ -2,5 +2,5 @@
 
 [Sudoku Game Arayüz](https://ograsyilmaz.github.io/ApyEducation/sudokuArayuzu/index.html)
 
-[Boostrap Html Arayüz](https://ograsyilmaz.github.io/ApyEducation/Boostrap/index.html)
+[Boostrap Html Arayüz](https://ograsyilmaz.github.io/ApyEducation/boostrap/index.html)
 
