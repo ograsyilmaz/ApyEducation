@@ -4,4 +4,7 @@
 
 [Boostrap Html Arayüz](https://ograsyilmaz.github.io/ApyEducation/Boostrap)
 
-[React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/heat)
+[Hava Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/heat)
+
+
+[Loading Bekleme Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/loadingspinner)

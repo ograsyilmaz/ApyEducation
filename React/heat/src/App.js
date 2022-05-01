@@ -2,12 +2,13 @@ import "./App.css";
 import React from "react";
 import HeatDisplay from "./Component/heatDisplay";
 import HeatList from './Component/heatList'
+import Degrees from './Component/Degrees'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      degree: 0,
+      celsius: 0,
       // celsius: 0,
       // fahrenheit: 0,
       // kelvin: 0,
@@ -18,7 +19,7 @@ class App extends React.Component {
   incrementClickHeatCount(test) {
 
     this.setState((prevState) => ({
-      degree: prevState.degree + 1,
+      celsius: prevState.celsius + 1,
     // kelvin: prevState.degree + 273,
     // celsius: prevState.degree,
     // fahrenheit: ((prevState.degree * 18) / 10) + 32,
@@ -43,22 +44,24 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        derece : {this.state.degree}
+        derece : {this.state.celsius}
         {/* kelvin: {this.state.kelvin}
         celsius :{this.state.celsius}
         fahrenheit: {this.state.fahrenheit} */}
 
         <HeatDisplay
         
-        nowHeat={this.state.degree}
+        nowHeat={this.state.celsius}
         displayTitle={"Sıcak Artırımı"}
         displayincrementClickHeat={this.incrementClickHeatCount}
         />
        <HeatList
-       celciusField={this.state.degree}
-       fahrenheitField={this.state.degree}
-       kelvinField={this.state.degree}
+       celciusField={this.state.celsius}
+       fahrenheitField={this.state.celsius}
+       kelvinField={this.state.celsius}
        />
+
+       <Degrees/>
       </div>
     );
   }
