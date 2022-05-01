@@ -12,15 +12,15 @@ class App extends Component {
       <div>
         {data.map((item) => (
           <p key={item.id}>
-            {item.name} {item.username}
+           {item.username}  - {item.name} 
           </p>
         ))}
       </div>
     );
   }
 
-  lodings() {
-    return <div>Lodings..</div>;
+  loading() {
+    return <div>loading..</div>;
   }
 
   componentDidMount() {
@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div>
         {this.state.loadingStatus
-          ? this.lodings()
+          ? this.loading()
           : this.UserData(this.state.data)}
       </div>
     );
