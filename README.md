@@ -6,7 +6,7 @@
 
 [Hava Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/heat)
 
-[Galeri](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/galeri)
+[Galeri](https://github.com/ograsyilmaz/ApyEducation/tree/main/galeri)
 
 [Loading Bekleme Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/loadingspinner)
 
