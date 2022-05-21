@@ -6,9 +6,11 @@
 
 [Hava Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/heat)
 
+[Galeri](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/galeri)
 
 [Loading Bekleme Durumu React](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/loadingspinner)
 
 [Shoing Redux App](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/shoping-redux-app)
 
 [Shoing Redux App](https://github.com/ograsyilmaz/ApyEducation/tree/main/React/coin-tracker)
+

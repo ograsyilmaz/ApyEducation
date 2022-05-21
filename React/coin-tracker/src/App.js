@@ -58,18 +58,7 @@ function App() {
     },
   ];
 
-  // return (
-  //   // <EzReactTable
-  //   //   cols={columns}
-  //   //   data={coins}
-  //   //   darkMode
-  //   //   title="Crypto Tracker"
-  //   //   defaultSort="name"
-  //   //   accentColor="#ffbc03"
-  //   //   tableHeight={300}
-  //   // />
-  //   <>test</>
-  // );
+
   return (
     <>
       <EzReactTable
